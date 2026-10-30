@@ -1,0 +1,9 @@
+PHP 8.3.35 (cli) (built: Oct 21 2026 00:33:53) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.3.35, Copyright (c) Zend Technologies
+    with Zend OPcache v8.3.35, Copyright (c), by Zend Technologies
+
+
+
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.23.0.4. Set the 'ServerName' directive globally to suppress this message
+ php_module (shared)

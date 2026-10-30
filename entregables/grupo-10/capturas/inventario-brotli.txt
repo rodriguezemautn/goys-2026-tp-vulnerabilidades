@@ -1,0 +1,21 @@
+node/server.js:3:const express = require('express');
+node/server.js:4:const zlib = require('node:zlib');
+node/server.js:6:const app = express();
+node/server.js:13:    brotli: process.versions.brotli || 'no expuesto',
+node/server.js:14:    express: require('express/package.json').version,
+node/server.js:18:// Decodifica un cuerpo Brotli benigno. No ejecuta ni evalúa el contenido.
+node/server.js:19:app.post('/decode', express.raw({ type: '*/*', limit: '1mb' }), (req, res) => {
+node/server.js:20:  if (req.headers['content-encoding'] !== 'br') {
+node/server.js:25:    const out = zlib.brotliDecompressSync(req.body);
+node/server.js:28:    return res.status(400).json({ error: 'brotli invalido' });
+node/package.json:5:  "description": "API de laboratorio para inspeccionar runtime y decodificador Brotli",
+node/package.json:8:    "express": "^5.0.0"
+python/app.py:1:"""Servicio mínimo para inspeccionar la versión de Brotli.
+python/app.py:6:from http.server import BaseHTTPRequestHandler, HTTPServer
+python/app.py:7:import json
+python/app.py:9:import brotli
+python/app.py:26:            "brotli": getattr(brotli, "__version__", "desconocida"),
+python/app.py:34:        if self.headers.get("Content-Encoding") == "br":
+python/app.py:36:                body = brotli.decompress(body)
+python/app.py:38:                return self._send(400, b'{"error":"brotli invalido"}')
+python/app.py:47:    import sys
