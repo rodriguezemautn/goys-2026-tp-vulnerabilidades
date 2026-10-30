@@ -1,0 +1,13 @@
+== 2026-10-29T00:57:05Z ANTES ==
+session.upload_progress.enabled=1
+== cambio en php/php.ini ==
+6:session.upload_progress.enabled = 0
+ Container php-lab Restarting 
+ Container php-lab Started 
+ Container php-lab Healthy 
+== 2026-10-29T00:57:11Z DESPUES ==
+session.upload_progress.enabled=0
+== prueba funcional: GET / y POST multipart ==
+GET / -> 200 titulo=Portal de legajos
+POST / -> Archivo recibido: legajo.txt
+php-lab Up 5 seconds (healthy)

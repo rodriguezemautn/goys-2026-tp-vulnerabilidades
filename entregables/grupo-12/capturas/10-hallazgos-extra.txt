@@ -1,0 +1,20 @@
+== 2026-10-29T00:59:47Z Montajes tmpfs y raíz ==
+-- php-lab
+overlay / overlay ro,relatime,lowerdir=…(recortado) 0 0
+tmpfs /tmp tmpfs rw,nosuid,nodev,noexec,relatime,inode64 0 0
+-- node-lab
+overlay / overlay ro,relatime,lowerdir=…(recortado) 0 0
+tmpfs /tmp tmpfs rw,nosuid,nodev,noexec,relatime,inode64 0 0
+-- py-lab
+overlay / overlay ro,relatime,lowerdir=…(recortado) 0 0
+tmpfs /tmp tmpfs rw,nosuid,nodev,noexec,relatime,inode64 0 0
+
+== Node: Brotli válido a /decode (Express 5 descomprime antes del handler) ==
+con Content-Encoding: br -> 400 {"error":"brotli invalido"}
+
+== Node: Brotli válido a / (ruta sin parser) ==
+POST / -> 404
+
+== Mapeo de UID: node (1000) en host ==
+martin
+userns: [name=apparmor,profile=default name=seccomp,profile=builtin name=cgroupns]

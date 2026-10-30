@@ -16,7 +16,7 @@ services:
       - /tmp
       - /var/run/apache2
       - /var/lock/apache2
-      - /var/log/apache2
+      - /var/log/apache2:mode=755
     read_only: true
     security_opt:
       - no-new-privileges:true

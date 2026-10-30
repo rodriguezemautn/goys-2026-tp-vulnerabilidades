@@ -1,0 +1,18 @@
+2026-10-29 21:59:22 UTC
+== SELinux en el host ==
+Enforcing
+unconfined_u:object_r:user_home_t:s0 php/php.ini
+unconfined_u:object_r:user_home_t:s0 php/public
+== Qué ini carga PHP dentro del contenedor ==
+Configuration File (php.ini) Path: /usr/local/etc/php
+Loaded Configuration File:         (none)
+Scan for additional .ini files in: /usr/local/etc/php/conf.d
+Additional .ini files parsed:      /usr/local/etc/php/conf.d/docker-php-ext-opcache.ini,
+/usr/local/etc/php/conf.d/docker-php-ext-sodium.ini
+== Montajes ==
+ls: cannot access '/usr/local/etc/php/conf.d/zz-lab.ini': Permission denied
+total 8
+-rw-r--r--. 1 root root 23 Oct 28 01:27 docker-php-ext-opcache.ini
+-rw-r--r--. 1 root root 17 Oct 28 01:27 docker-php-ext-sodium.ini
+-?????????? ? ?    ?     ?            ? zz-lab.ini
+ls: cannot open directory '/var/www/html': Permission denied

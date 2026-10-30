@@ -1,0 +1,30 @@
+== 2026-10-29T00:58:13Z Post-parche: healthy + prueba funcional ==
+ Container php-lab Healthy 
+ Container node-lab Healthy 
+ Container py-lab Healthy 
+php GET / -> 200
+node POST /decode -> 200 hola-node
+py POST br -> 200 hola-py
+
+== 2026-10-29T00:58:14Z PRUEBA DE REVERSION: volver a versiones de versions.env ==
+ Container node-lab Healthy 
+ Container php-lab Healthy 
+ Container py-lab Healthy 
+PHP 8.3.35 (cli) (built: Oct 21 2026 00:33:53) (NTS)
+v22.23.3 / brotli 1.1.0
+brotli 1.0.9
+
+== 2026-10-29T00:58:31Z RE-PARCHE ==
+ Container node-lab Healthy 
+ Container php-lab Healthy 
+ Container py-lab Healthy 
+PHP 8.3.36 (cli) (built: Oct 28 2026 01:26:59) (NTS)
+session.upload_progress.enabled=0
+v22.23.4 / brotli 1.1.0
+brotli 1.2.1
+php GET / -> 200
+node POST /decode -> 200 hola-node
+py POST br -> 200 hola-py
+node-lab goys-vuln-lab-node:22.23.4-bookworm-slim Up 7 seconds (healthy)
+php-lab php:8.3.36-apache Up 7 seconds (healthy)
+py-lab goys-vuln-lab-py:1.2.1 Up 7 seconds (healthy)

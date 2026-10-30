@@ -1,0 +1,34 @@
+2026-10-29 21:59:10 UTC
+== Prueba funcional post-parche ==
+-- Node GET /:
+{"service":"node-lab","runtime":"v22.23.4","brotli":"1.1.0","express":"5.3.0"}
+-- Python GET /:
+{"service": "py-lab", "python": "3.11.18", "brotli": "1.2.1"}
+-- PHP GET / (portal):
+FALLA: HTTP/1.1 403 Forbidden
+-- PHP lectura de php.ini montado:
+cat: /usr/local/etc/php/conf.d/zz-lab.ini: Permission denied
+-- Estado:
+php-lab docker.io/library/php:8.3.36-apache Up 27 seconds (healthy)
+node-lab localhost/goys-vuln-lab-node:22.23.4-bookworm-slim Up 27 seconds (healthy)
+py-lab localhost/goys-vuln-lab-py:1.2.1 Up 27 seconds (healthy)
+
+== Contención post-parche ==
+== Controles declarados en el compose ==
+    internal: true
+    cap_drop:
+    mem_limit: 256m
+    read_only: true
+    cap_drop:
+    mem_limit: 256m
+    read_only: true
+    cap_drop:
+    mem_limit: 128m
+    read_only: true
+== Prueba de salida a Internet (debe fallar) ==
+-- PHP:
+SIN SALIDA
+-- Node.js:
+SIN SALIDA TypeError
+-- Python:
+SIN SALIDA URLError

@@ -1,0 +1,28 @@
+== 2026-10-29T00:58:55Z contención post-parche ==
+== Prueba de salida a Internet (debe fallar) ==
+-- PHP:
+SIN SALIDA
+-- Node.js:
+SIN SALIDA TypeError
+-- Python:
+SIN SALIDA URLError
+
+== docker top post-parche ==
+== Árbol de procesos: web ==
+PID                 PPID                USER                COMMAND             COMMAND
+32333               32309               root                apache2             apache2 -DFOREGROUND
+32424               32333               www-data            apache2             apache2 -DFOREGROUND
+32425               32333               www-data            apache2             apache2 -DFOREGROUND
+32426               32333               www-data            apache2             apache2 -DFOREGROUND
+32427               32333               www-data            apache2             apache2 -DFOREGROUND
+32428               32333               www-data            apache2             apache2 -DFOREGROUND
+
+== Árbol de procesos: API ==
+PID                 PPID                USER                COMMAND             COMMAND
+32418               32394               martin              node                node server.js
+
+== Árbol de procesos: servicio interno ==
+PID                 PPID                USER                COMMAND             COMMAND
+32493               32467               nobody              python              python app.py
+
+== Hijos sospechosos en el log sintético ==

@@ -1,0 +1,55 @@
+===== php-lab =====
+-- usuario del proceso principal:
+uid=0(root) gid=0(root) groups=0(root)
+-- escritura en / (debe fallar):
+touch: cannot touch '/prueba-ro': Read-only file system
+BLOQUEADO (read-only)
+-- escritura en /tmp (tmpfs, permitido):
+OK tmpfs
+-- capabilities efectivas (CapEff/CapBnd):
+CapEff:	00000000000004c3
+CapBnd:	00000000000004c3
+NoNewPrivs:	1
+-- limites:
+Memory=268435456 PidsLimit=100 ReadonlyRootfs=true CapDrop=[ALL] CapAdd=[CAP_CHOWN CAP_DAC_OVERRIDE CAP_NET_BIND_SERVICE CAP_SETGID CAP_SETUID] SecOpt=[no-new-privileges:true]
+===== node-lab =====
+-- usuario del proceso principal:
+uid=1000(node) gid=1000(node) groups=1000(node)
+-- escritura en / (debe fallar):
+touch: cannot touch '/prueba-ro': Read-only file system
+BLOQUEADO (read-only)
+-- escritura en /tmp (tmpfs, permitido):
+OK tmpfs
+-- capabilities efectivas (CapEff/CapBnd):
+CapEff:	0000000000000000
+CapBnd:	0000000000000000
+NoNewPrivs:	1
+-- limites:
+Memory=268435456 PidsLimit=100 ReadonlyRootfs=true CapDrop=[ALL] CapAdd=[] SecOpt=[no-new-privileges:true]
+===== py-lab =====
+-- usuario del proceso principal:
+uid=65534(nobody) gid=65534(nogroup) groups=65534(nogroup)
+-- escritura en / (debe fallar):
+touch: cannot touch '/prueba-ro': Read-only file system
+BLOQUEADO (read-only)
+-- escritura en /tmp (tmpfs, permitido):
+OK tmpfs
+-- capabilities efectivas (CapEff/CapBnd):
+CapEff:	0000000000000000
+CapBnd:	0000000000000000
+NoNewPrivs:	1
+-- limites:
+Memory=134217728 PidsLimit=50 ReadonlyRootfs=true CapDrop=[ALL] CapAdd=[] SecOpt=[no-new-privileges:true]
+
+===== Brotli innecesario: POST sin Content-Encoding br pasa en claro; con br invalido se rechaza =====
+400 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Error: Decompression failed<br> &nbsp; &nbsp;at genericNodeError (node:internal/errors:983:15)<br> &nbsp; &nbsp;at wrappedFn (node:internal/errors:537:14)<br> &nbsp; &nbsp;at BrotliDecoder.zlibOnError [as onerror] (node:zlib:191:17)</pre>
+</body>
+</html>
+
