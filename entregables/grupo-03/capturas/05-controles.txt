@@ -1,0 +1,3 @@
+/php-lab user= readonly=true capdrop=[ALL] capadd=[CAP_CHOWN CAP_DAC_OVERRIDE CAP_NET_BIND_SERVICE CAP_SETGID CAP_SETUID] mem=268435456 pids=100 net=goys-vuln-lab_labnet
+/node-lab user=node readonly=true capdrop=[ALL] capadd=[] mem=268435456 pids=100 net=goys-vuln-lab_labnet
+/py-lab user=nobody readonly=true capdrop=[ALL] capadd=[] mem=134217728 pids=50 net=goys-vuln-lab_labnet

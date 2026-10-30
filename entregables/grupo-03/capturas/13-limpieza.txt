@@ -1,0 +1,16 @@
+2026-10-29T22:34:12-03:00
+ Container py-lab  Stopping
+ Container php-lab  Stopping
+ Container node-lab  Stopping
+ Container php-lab  Stopped
+ Container php-lab  Removing
+ Container php-lab  Removed
+ Container py-lab  Stopped
+ Container py-lab  Removing
+ Container py-lab  Removed
+ Container node-lab  Stopped
+ Container node-lab  Removing
+ Container node-lab  Removed
+ Network goys-vuln-lab_labnet  Removing
+ Network goys-vuln-lab_labnet  Removed
+NAME      IMAGE     COMMAND   SERVICE   CREATED   STATUS    PORTS

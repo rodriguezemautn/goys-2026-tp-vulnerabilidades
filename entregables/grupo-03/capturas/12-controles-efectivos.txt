@@ -1,0 +1,12 @@
+2026-10-29T22:34:04-03:00
+/php-lab user= readonly=true capdrop=[ALL] capadd=[CAP_CHOWN CAP_DAC_OVERRIDE CAP_NET_BIND_SERVICE CAP_SETGID CAP_SETUID] mem=268435456 pids=100 security=[no-new-privileges:true]
+/node-lab user=node readonly=true capdrop=[ALL] capadd=[] mem=268435456 pids=100 security=[no-new-privileges:true]
+/py-lab user=nobody readonly=true capdrop=[ALL] capadd=[] mem=134217728 pids=50 security=[no-new-privileges:true]
+red=goys-vuln-lab_labnet internal=true
+PID                 PPID                USER                COMMAND             COMMAND
+5521                5470                root                apache2             apache2 -DFOREGROUND
+5604                5521                www-data            apache2             apache2 -DFOREGROUND
+5605                5521                www-data            apache2             apache2 -DFOREGROUND
+5606                5521                www-data            apache2             apache2 -DFOREGROUND
+5607                5521                www-data            apache2             apache2 -DFOREGROUND
+5608                5521                www-data            apache2             apache2 -DFOREGROUND

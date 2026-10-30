@@ -1,0 +1,4 @@
+2026-10-29T22:28:57-03:00
+ Container php-lab  Restarting
+ Container php-lab  Started
+session.upload_progress.enabled=0

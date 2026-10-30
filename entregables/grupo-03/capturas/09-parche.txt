@@ -1,0 +1,381 @@
+2026-10-29T22:31:48-03:00
+ php-lab Pulling 
+ 4f4fb700ef54 Pulling fs layer 
+ 93b2cd3537a5 Pulling fs layer 
+ af0766f7cfc4 Pulling fs layer 
+ 22708fbe0e2e Pulling fs layer 
+ 790c02bafaa2 Pulling fs layer 
+ 07c8c2d650d9 Pulling fs layer 
+ 49a28f8d0322 Pulling fs layer 
+ ed95f0592eb9 Pulling fs layer 
+ f7f3b57584ba Pulling fs layer 
+ 1b7af0b64b6d Pulling fs layer 
+ 988510c25b4b Pulling fs layer 
+ f642919017b4 Pulling fs layer 
+ 6256781470ba Pulling fs layer 
+ 2e5f2bae3398 Pulling fs layer 
+ 4f4fb700ef54 Already exists 
+ 4f4fb700ef54 Pull complete 
+ 790c02bafaa2 Downloading [==================================================>]     226B/226B
+ 790c02bafaa2 Downloading [==================================================>]     226B/226B
+ 790c02bafaa2 Downloading [==================================================>]     226B/226B
+ 790c02bafaa2 Downloading [==================================================>]     226B/226B
+ af0766f7cfc4 Downloading [============>                                      ]  3.146MB/12.84MB
+ 790c02bafaa2 Downloading [==================================================>]     226B/226B
+ 22708fbe0e2e Downloading [==================================================>]  2.461kB/2.461kB
+ 49a28f8d0322 Downloading [==================================================>]     246B/246B
+ af0766f7cfc4 Downloading [====================>                              ]  5.243MB/12.84MB
+ af0766f7cfc4 Downloading [============================>                      ]   7.34MB/12.84MB
+ ed95f0592eb9 Downloading [==================================================>]     492B/492B
+ 790c02bafaa2 Download complete 
+ 22708fbe0e2e Downloading [==================================================>]  2.461kB/2.461kB
+ 49a28f8d0322 Download complete 
+ 790c02bafaa2 Extracting 1 s
+ 93b2cd3537a5 Downloading [========================>                          ]  2.097MB/4.244MB
+ 22708fbe0e2e Download complete 
+ 07c8c2d650d9 Downloading [==================================================>]     432B/432B
+ af0766f7cfc4 Downloading [================================>                  ]  8.389MB/12.84MB
+ 988510c25b4b Downloading [==================================================>]     483B/483B
+ 2e5f2bae3398 Downloading [==================================================>]     892B/892B
+ f642919017b4 Downloading [==================================================>]     228B/228B
+ ed95f0592eb9 Download complete 
+ 1b7af0b64b6d Downloading [==================================================>]     251B/251B
+ 790c02bafaa2 Extracting 1 s
+ af0766f7cfc4 Downloading [====================================>              ]  9.437MB/12.84MB
+ 988510c25b4b Downloading [==================================================>]     483B/483B
+ 2e5f2bae3398 Downloading [==================================================>]     892B/892B
+ 1b7af0b64b6d Downloading [==================================================>]     251B/251B
+ f642919017b4 Downloading [==================================================>]     228B/228B
+ 93b2cd3537a5 Downloading [========================>                          ]  2.097MB/4.244MB
+ 07c8c2d650d9 Downloading [==================================================>]     432B/432B
+ 790c02bafaa2 Extracting 1 s
+ af0766f7cfc4 Downloading [====================================>              ]  9.437MB/12.84MB
+ 988510c25b4b Downloading [==================================================>]     483B/483B
+ 6256781470ba Downloading [>                                                  ]  1.049MB/117.8MB
+ 2e5f2bae3398 Downloading [==================================================>]     892B/892B
+ f642919017b4 Downloading [==================================================>]     228B/228B
+ f7f3b57584ba Downloading [====>                                              ]  1.049MB/11.76MB
+ 1b7af0b64b6d Downloading [==================================================>]     251B/251B
+ 93b2cd3537a5 Downloading [=====================================>             ]  3.146MB/4.244MB
+ 07c8c2d650d9 Downloading [==================================================>]     432B/432B
+ f7f3b57584ba Downloading [========>                                          ]  2.097MB/11.76MB
+ f642919017b4 Downloading [==================================================>]     228B/228B
+ 93b2cd3537a5 Downloading [==================================================>]  4.244MB/4.244MB
+ 07c8c2d650d9 Downloading [==================================================>]     432B/432B
+ af0766f7cfc4 Downloading [========================================>          ]  10.49MB/12.84MB
+ 988510c25b4b Downloading [==================================================>]     483B/483B
+ 6256781470ba Downloading [>                                                  ]  1.049MB/117.8MB
+ 2e5f2bae3398 Downloading [==================================================>]     892B/892B
+ 790c02bafaa2 Pull complete 
+ f7f3b57584ba Downloading [=============>                                     ]  3.146MB/11.76MB
+ 1b7af0b64b6d Download complete 
+ f642919017b4 Downloading [==================================================>]     228B/228B
+ 07c8c2d650d9 Downloading [==================================================>]     432B/432B
+ 93b2cd3537a5 Downloading [==================================================>]  4.244MB/4.244MB
+ 988510c25b4b Downloading [==================================================>]     483B/483B
+ 6256781470ba Downloading [>                                                  ]  2.097MB/117.8MB
+ 2e5f2bae3398 Downloading [==================================================>]     892B/892B
+ af0766f7cfc4 Downloading [============================================>      ]  11.53MB/12.84MB
+ af0766f7cfc4 Downloading [==================================================>]  12.84MB/12.84MB
+ 988510c25b4b Download complete 
+ 6256781470ba Downloading [=>                                                 ]  4.194MB/117.8MB
+ 2e5f2bae3398 Downloading [==================================================>]     892B/892B
+ f7f3b57584ba Downloading [=================>                                 ]  4.194MB/11.76MB
+ f642919017b4 Download complete 
+ 93b2cd3537a5 Downloading [==================================================>]  4.244MB/4.244MB
+ 07c8c2d650d9 Downloading [==================================================>]     432B/432B
+ 07c8c2d650d9 Download complete 
+ 93b2cd3537a5 Downloading [==================================================>]  4.244MB/4.244MB
+ 6256781470ba Downloading [==>                                                ]  5.243MB/117.8MB
+ 2e5f2bae3398 Download complete 
+ af0766f7cfc4 Downloading [==================================================>]  12.84MB/12.84MB
+ f7f3b57584ba Downloading [==========================>                        ]  6.291MB/11.76MB
+ f7f3b57584ba Downloading [===============================>                   ]   7.34MB/11.76MB
+ 93b2cd3537a5 Downloading [==================================================>]  4.244MB/4.244MB
+ af0766f7cfc4 Downloading [==================================================>]  12.84MB/12.84MB
+ 6256781470ba Downloading [===>                                               ]   7.34MB/117.8MB
+ 93b2cd3537a5 Download complete 
+ af0766f7cfc4 Downloading [==================================================>]  12.84MB/12.84MB
+ 6256781470ba Downloading [====>                                              ]  9.437MB/117.8MB
+ f7f3b57584ba Downloading [========================================>          ]  9.437MB/11.76MB
+ af0766f7cfc4 Downloading [==================================================>]  12.84MB/12.84MB
+ 6256781470ba Downloading [====>                                              ]  10.49MB/117.8MB
+ f7f3b57584ba Downloading [============================================>      ]  10.49MB/11.76MB
+ af0766f7cfc4 Download complete 
+ 6256781470ba Downloading [=====>                                             ]  12.58MB/117.8MB
+ f7f3b57584ba Downloading [==================================================>]  11.76MB/11.76MB
+ 6256781470ba Downloading [======>                                            ]  14.68MB/117.8MB
+ f7f3b57584ba Downloading [==================================================>]  11.76MB/11.76MB
+ 6256781470ba Downloading [=======>                                           ]  16.78MB/117.8MB
+ f7f3b57584ba Download complete 
+ 6256781470ba Downloading [========>                                          ]  19.92MB/117.8MB
+ 6256781470ba Downloading [=========>                                         ]  22.02MB/117.8MB
+ 6256781470ba Downloading [==========>                                        ]  24.12MB/117.8MB
+ 6256781470ba Downloading [===========>                                       ]  27.26MB/117.8MB
+ 6256781470ba Downloading [============>                                      ]  29.36MB/117.8MB
+ 6256781470ba Downloading [=============>                                     ]  31.46MB/117.8MB
+ 6256781470ba Downloading [==============>                                    ]  33.55MB/117.8MB
+ 6256781470ba Downloading [===============>                                   ]  35.65MB/117.8MB
+ 6256781470ba Downloading [================>                                  ]   38.8MB/117.8MB
+ 6256781470ba Downloading [=================>                                 ]  40.89MB/117.8MB
+ 6256781470ba Downloading [==================>                                ]  42.99MB/117.8MB
+ 6256781470ba Downloading [===================>                               ]  46.14MB/117.8MB
+ 6256781470ba Downloading [====================>                              ]  48.23MB/117.8MB
+ 6256781470ba Downloading [=====================>                             ]  50.33MB/117.8MB
+ 6256781470ba Downloading [======================>                            ]  53.48MB/117.8MB
+ 6256781470ba Downloading [=======================>                           ]  55.57MB/117.8MB
+ 6256781470ba Downloading [========================>                          ]  58.72MB/117.8MB
+ 6256781470ba Downloading [=========================>                         ]  60.82MB/117.8MB
+ 6256781470ba Downloading [==========================>                        ]  62.91MB/117.8MB
+ 6256781470ba Downloading [============================>                      ]  66.06MB/117.8MB
+ 6256781470ba Downloading [============================>                      ]  68.16MB/117.8MB
+ 6256781470ba Downloading [==============================>                    ]   71.3MB/117.8MB
+ 6256781470ba Downloading [===============================>                   ]   73.4MB/117.8MB
+ 6256781470ba Downloading [================================>                  ]  76.55MB/117.8MB
+ 6256781470ba Downloading [=================================>                 ]  78.64MB/117.8MB
+ 6256781470ba Downloading [==================================>                ]  80.74MB/117.8MB
+ 6256781470ba Downloading [===================================>               ]  83.89MB/117.8MB
+ 6256781470ba Downloading [====================================>              ]  85.98MB/117.8MB
+ 6256781470ba Downloading [=====================================>             ]  88.08MB/117.8MB
+ 6256781470ba Downloading [======================================>            ]  91.23MB/117.8MB
+ 6256781470ba Downloading [=======================================>           ]  93.32MB/117.8MB
+ 6256781470ba Downloading [========================================>          ]  96.47MB/117.8MB
+ 6256781470ba Downloading [=========================================>         ]  98.57MB/117.8MB
+ 6256781470ba Downloading [==========================================>        ]  100.7MB/117.8MB
+ 6256781470ba Downloading [============================================>      ]  103.8MB/117.8MB
+ 6256781470ba Downloading [============================================>      ]  105.9MB/117.8MB
+ 6256781470ba Downloading [==============================================>    ]  109.1MB/117.8MB
+ 6256781470ba Downloading [===============================================>   ]  111.1MB/117.8MB
+ 6256781470ba Downloading [================================================>  ]  114.3MB/117.8MB
+ 6256781470ba Downloading [=================================================> ]  116.4MB/117.8MB
+ 6256781470ba Downloading [==================================================>]  117.8MB/117.8MB
+ 6256781470ba Downloading [==================================================>]  117.8MB/117.8MB
+ 6256781470ba Downloading [==================================================>]  117.8MB/117.8MB
+ 6256781470ba Downloading [==================================================>]  117.8MB/117.8MB
+ 6256781470ba Downloading [==================================================>]  117.8MB/117.8MB
+ 6256781470ba Downloading [==================================================>]  117.8MB/117.8MB
+ 6256781470ba Downloading [==================================================>]  117.8MB/117.8MB
+ 6256781470ba Downloading [==================================================>]  117.8MB/117.8MB
+ 6256781470ba Downloading [==================================================>]  117.8MB/117.8MB
+ 6256781470ba Download complete 
+ 6256781470ba Extracting 1 s
+ 6256781470ba Extracting 1 s
+ 6256781470ba Extracting 1 s
+ 6256781470ba Extracting 1 s
+ 6256781470ba Extracting 1 s
+ 6256781470ba Extracting 1 s
+ 6256781470ba Extracting 1 s
+ 6256781470ba Extracting 1 s
+ 6256781470ba Extracting 1 s
+ 6256781470ba Extracting 1 s
+ 6256781470ba Extracting 2 s
+ 6256781470ba Extracting 2 s
+ 6256781470ba Extracting 2 s
+ 6256781470ba Extracting 2 s
+ 6256781470ba Extracting 2 s
+ 6256781470ba Extracting 2 s
+ 6256781470ba Extracting 2 s
+ 6256781470ba Extracting 2 s
+ 6256781470ba Extracting 2 s
+ 6256781470ba Extracting 2 s
+ 6256781470ba Extracting 3 s
+ 6256781470ba Extracting 3 s
+ 6256781470ba Extracting 3 s
+ 6256781470ba Extracting 3 s
+ 6256781470ba Extracting 3 s
+ 6256781470ba Extracting 3 s
+ 6256781470ba Extracting 3 s
+ 6256781470ba Extracting 3 s
+ 6256781470ba Extracting 3 s
+ 6256781470ba Extracting 3 s
+ 6256781470ba Extracting 4 s
+ f642919017b4 Pull complete 
+ 93b2cd3537a5 Extracting 1 s
+ 6256781470ba Pull complete 
+ 93b2cd3537a5 Extracting 1 s
+ 07c8c2d650d9 Extracting 1 s
+ 93b2cd3537a5 Pull complete 
+ 988510c25b4b Pull complete 
+ 07c8c2d650d9 Pull complete 
+ af0766f7cfc4 Extracting 1 s
+ ed95f0592eb9 Pull complete 
+ af0766f7cfc4 Pull complete 
+ f7f3b57584ba Extracting 1 s
+ f7f3b57584ba Extracting 1 s
+ f7f3b57584ba Extracting 1 s
+ f7f3b57584ba Extracting 1 s
+ f7f3b57584ba Pull complete 
+ 49a28f8d0322 Pull complete 
+ 22708fbe0e2e Pull complete 
+ 1b7af0b64b6d Pull complete 
+ 2e5f2bae3398 Pull complete 
+ php-lab Pulled 
+Compose can now delegate builds to bake for better performance.
+ To do so, set COMPOSE_BAKE=true.
+2026/10/29 22:32:02 http2: server: error reading preface from client //./pipe/dockerDesktopLinuxEngine: file has already been closed
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [node-lab internal] load build definition from Dockerfile
+#1 transferring dockerfile: 240B done
+#1 DONE 0.0s
+
+#2 [py-lab internal] load build definition from Dockerfile
+#2 transferring dockerfile: 258B done
+#2 DONE 0.0s
+
+#3 [py-lab internal] load metadata for docker.io/library/python:3.11-slim
+#3 DONE 0.9s
+
+#4 [node-lab internal] load metadata for docker.io/library/node:22.23.4-bookworm-slim
+#4 ...
+
+#5 [py-lab internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [py-lab internal] load build context
+#6 transferring context: 28B done
+#6 DONE 0.0s
+
+#7 [py-lab 1/4] FROM docker.io/library/python:3.11-slim@sha256:673719e071ecf27434fd2635bbd8d00f49f4fdd81f243143438a42ced8bedf60
+#7 resolve docker.io/library/python:3.11-slim@sha256:673719e071ecf27434fd2635bbd8d00f49f4fdd81f243143438a42ced8bedf60 0.0s done
+#7 DONE 0.0s
+
+#8 [py-lab 2/4] WORKDIR /app
+#8 CACHED
+
+#9 [py-lab 3/4] RUN pip install --no-cache-dir "brotli==1.2.1"
+#9 ...
+
+#4 [node-lab internal] load metadata for docker.io/library/node:22.23.4-bookworm-slim
+#4 DONE 1.6s
+
+#10 [node-lab internal] load .dockerignore
+#10 transferring context: 2B done
+#10 DONE 0.0s
+
+#11 [node-lab internal] load build context
+#11 transferring context: 63B done
+#11 DONE 0.0s
+
+#12 [node-lab 1/5] FROM docker.io/library/node:22.23.4-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#12 resolve docker.io/library/node:22.23.4-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da 0.0s done
+#12 DONE 0.1s
+
+#9 [py-lab 3/4] RUN pip install --no-cache-dir "brotli==1.2.1"
+#9 1.969 Collecting brotli==1.2.1
+#9 2.105   Downloading brotli-1.2.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.1 kB)
+#9 2.118 Downloading brotli-1.2.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+#9 2.260    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 10.4 MB/s eta 0:00:00
+#9 2.355 Installing collected packages: brotli
+#9 2.411 Successfully installed brotli-1.2.1
+#9 2.412 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#9 2.593 
+#9 2.593 [notice] A new release of pip is available: 24.0 -> 26.2.2
+#9 2.593 [notice] To update, run: pip install --upgrade pip
+#9 DONE 3.9s
+
+#13 [py-lab 4/4] COPY app.py ./
+#13 DONE 0.1s
+
+#12 [node-lab 1/5] FROM docker.io/library/node:22.23.4-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#12 sha256:0bee45faaffff77eee1e3d151cc650b854df28523ea01e5a2dcc0327da8793a9 448B / 448B 0.2s done
+#12 sha256:d22dd8aef5082b9de7fb037db9c398ee2822c5c81cc5cbb63bb32a46a5decdb1 1.71MB / 1.71MB 0.4s done
+#12 sha256:df736340692d217b57cd447c94f978f9a91ce3e8805b225e78374eae3aff864c 49.89MB / 49.89MB 3.2s done
+#12 sha256:709e8267cebf108d59c4e6e386882a5c79c10bbe11ecd02c6ed9ed4efa5b905d 3.31kB / 3.31kB 0.5s done
+#12 sha256:3c5439d0ae62993af4cc4e21b8c777297e81bc40e200d4633c85a3e0f977a3bc 28.25MB / 28.25MB 2.8s done
+#12 extracting sha256:3c5439d0ae62993af4cc4e21b8c777297e81bc40e200d4633c85a3e0f977a3bc
+#12 extracting sha256:3c5439d0ae62993af4cc4e21b8c777297e81bc40e200d4633c85a3e0f977a3bc 1.0s done
+#12 DONE 4.2s
+
+#14 [py-lab] exporting to image
+#14 exporting layers 0.7s done
+#14 exporting manifest sha256:dfecb416f007e23a5f9a8c523407f4e70f24fb1b67ffc9c694417693f0e051af 0.0s done
+#14 exporting config sha256:b694a8a71e75933d76a8df39a0d37553f38d8acdf6a27c02077a0c8c55329bf0 0.0s done
+#14 exporting attestation manifest sha256:4c42c7fddb21643ade05ae41a81fedd85b02e62fd8f7ee23a83110df669ad6d4 0.0s done
+#14 exporting manifest list sha256:5e94199efa2eac1fa32a673248581876f1f5d8939ee5977c0d32d7fb839586df 0.0s done
+#14 naming to docker.io/library/goys-vuln-lab-py:1.2.1 done
+#14 unpacking to docker.io/library/goys-vuln-lab-py:1.2.1
+#14 unpacking to docker.io/library/goys-vuln-lab-py:1.2.1 0.3s done
+#14 DONE 1.1s
+
+#15 [py-lab] resolving provenance for metadata file
+#15 DONE 0.0s
+
+#12 [node-lab 1/5] FROM docker.io/library/node:22.23.4-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#12 extracting sha256:709e8267cebf108d59c4e6e386882a5c79c10bbe11ecd02c6ed9ed4efa5b905d 0.0s done
+#12 extracting sha256:df736340692d217b57cd447c94f978f9a91ce3e8805b225e78374eae3aff864c
+#12 extracting sha256:df736340692d217b57cd447c94f978f9a91ce3e8805b225e78374eae3aff864c 1.3s done
+#12 DONE 5.6s
+
+#12 [node-lab 1/5] FROM docker.io/library/node:22.23.4-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#12 extracting sha256:d22dd8aef5082b9de7fb037db9c398ee2822c5c81cc5cbb63bb32a46a5decdb1 0.1s done
+#12 extracting sha256:0bee45faaffff77eee1e3d151cc650b854df28523ea01e5a2dcc0327da8793a9 0.0s done
+#12 DONE 5.7s
+
+#16 [node-lab 2/5] WORKDIR /app
+#16 DONE 0.6s
+
+#17 [node-lab 3/5] COPY package.json ./
+#17 DONE 0.0s
+
+#18 [node-lab 4/5] RUN npm install --omit=dev
+#18 3.008 
+#18 3.008 added 65 packages, and audited 66 packages in 3s
+#18 3.008 
+#18 3.008 30 packages are looking for funding
+#18 3.008   run `npm fund` for details
+#18 3.009 
+#18 3.009 found 0 vulnerabilities
+#18 3.010 npm notice
+#18 3.010 npm notice New major version of npm available! 10.9.9 -> 12.2.1
+#18 3.010 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+#18 3.010 npm notice To update run: npm install -g npm@12.2.1
+#18 3.010 npm notice
+#18 DONE 3.1s
+
+#19 [node-lab 5/5] COPY server.js ./
+#19 DONE 0.0s
+
+#20 [node-lab] exporting to image
+#20 exporting layers
+#20 exporting layers 0.4s done
+#20 exporting manifest sha256:bab5fdce7fa6148fdf68c8fe4bdf155a77ffde0298d1cd0f4ad751cbcb6543d0 0.0s done
+#20 exporting config sha256:bd75ef14a2625ee0ca65fdf3931179d06b19723a4f4385eb2cafa88424468b38 0.0s done
+#20 exporting attestation manifest sha256:7d17008806a7b9e4b3a5ff3b31e38445600d14f1ff86b96b48c8e1d958a79158 0.0s done
+#20 exporting manifest list sha256:791e0af6e3e3a2cd7de161e4070e64a1f5ee1e0c744eecc8ed532676f706bf2a 0.0s done
+#20 naming to docker.io/library/goys-vuln-lab-node:22.23.4-bookworm-slim done
+#20 unpacking to docker.io/library/goys-vuln-lab-node:22.23.4-bookworm-slim
+#20 unpacking to docker.io/library/goys-vuln-lab-node:22.23.4-bookworm-slim 0.5s done
+#20 DONE 1.0s
+
+#21 [node-lab] resolving provenance for metadata file
+#21 DONE 0.0s
+ node-lab  Built
+ py-lab  Built
+ Container php-lab  Recreate
+ Container node-lab  Recreate
+ Container py-lab  Recreate
+ Container php-lab  Recreated
+ Container node-lab  Recreated
+ Container py-lab  Recreated
+ Container php-lab  Starting
+ Container py-lab  Starting
+ Container node-lab  Starting
+ Container node-lab  Started
+ Container py-lab  Started
+ Container php-lab  Started
+
+== Versiones después del parche ==
+== PHP ==
+PHP 8.3.36 (cli) (built: Oct 28 2026 01:26:59) (NTS)
+session.upload_progress.enabled=0
+
+== Node.js ==
+v22.23.4 / brotli 1.1.0
+-- dependencias con brotli:
+   (sin paquete brotli externo: lo aporta el runtime)
+
+== Python ==
+python 3.11.18
+brotli 1.2.1
