@@ -1,0 +1,11 @@
+node/server.js:13:    brotli: process.versions.brotli || 'no expuesto',
+node/server.js:18:// Decodifica un cuerpo Brotli benigno. No ejecuta ni evalúa el contenido.
+node/server.js:20:  if (req.headers['content-encoding'] !== 'br') {
+node/server.js:25:    const out = zlib.brotliDecompressSync(req.body);
+node/server.js:28:    return res.status(400).json({ error: 'brotli invalido' });
+python/app.py:1:"""Servicio mínimo para inspeccionar la versión de Brotli.
+python/app.py:9:import brotli
+python/app.py:26:            "brotli": getattr(brotli, "__version__", "desconocida"),
+python/app.py:34:        if self.headers.get("Content-Encoding") == "br":
+python/app.py:36:                body = brotli.decompress(body)
+python/app.py:38:                return self._send(400, b'{"error":"brotli invalido"}')

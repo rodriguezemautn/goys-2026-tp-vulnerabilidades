@@ -1,0 +1,29 @@
+    cap_drop:
+      - ALL
+    command:
+      - node
+      - server.js
+    hostname: api01
+    image: goys-vuln-lab-node:22.23.3-bookworm-slim
+--
+    cap_add:
+      - CHOWN
+      - SETUID
+      - SETGID
+      - DAC_OVERRIDE
+      - NET_BIND_SERVICE
+    cap_drop:
+      - ALL
+    hostname: web01
+    image: php:8.3.35-apache
+    mem_limit: "268435456"
+    networks:
+      labnet: null
+--
+    cap_drop:
+      - ALL
+    command:
+      - python
+      - app.py
+    hostname: svc01
+    image: goys-vuln-lab-py:1.0.9

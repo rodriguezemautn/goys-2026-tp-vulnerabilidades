@@ -1,0 +1,29 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.24kB done
+#1 DONE 0.0s
+
+#2 [py-lab internal] load build definition from Dockerfile
+#2 DONE 0.0s
+
+#3 [node-lab internal] load build definition from Dockerfile
+#3 transferring dockerfile: 227B done
+#3 DONE 0.0s
+
+#2 [py-lab internal] load build definition from Dockerfile
+#2 transferring dockerfile: 245B done
+#2 DONE 0.1s
+
+#4 [py-lab internal] load metadata for docker.io/library/python:3.11-slim
+#4 ...
+
+#5 [node-lab internal] load metadata for docker.io/library/node:22.23.4-bookworm-slim
+#5 ERROR: failed to do request: Head "https://registry-1.docker.io/v2/library/node/manifests/22.23.4-bookworm-slim": net/http: timeout awaiting response headers
+
+#4 [py-lab internal] load metadata for docker.io/library/python:3.11-slim
+#4 ERROR: failed to do request: Head "https://registry-1.docker.io/v2/library/python/manifests/3.11-slim": net/http: timeout awaiting response headers
+------
+ > [node-lab internal] load metadata for docker.io/library/node:22.23.4-bookworm-slim:
+------
+------
+ > [py-lab internal] load metadata for docker.io/library/python:3.11-slim:
+------

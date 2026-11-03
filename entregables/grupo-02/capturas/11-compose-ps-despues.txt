@@ -1,0 +1,4 @@
+NAME       IMAGE                                                                     COMMAND                  SERVICE    CREATED         STATUS                   PORTS
+node-lab   sha256:4e61d80ad078e7b50ffaf878ea7f10603a22d0e56ce6600b9082939d565cf28e   "docker-entrypoint.s…"   node-lab   3 minutes ago   Up 3 minutes (healthy)   3000/tcp
+php-lab    php:8.3.36-apache                                                         "docker-php-entrypoi…"   php-lab    3 minutes ago   Up 3 minutes (healthy)   80/tcp
+py-lab     sha256:2de63007a8e80aff383f5cb8a902bd0ba7cdc30efc4f92f94042c0017181d668   "python app.py"          py-lab     3 minutes ago   Up 3 minutes (healthy)   8000/tcp

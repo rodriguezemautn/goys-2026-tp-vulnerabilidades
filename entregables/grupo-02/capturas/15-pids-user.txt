@@ -1,0 +1,8 @@
+    pids_limit: 100
+      - no-new-privileges:true
+    user: node
+    pids_limit: 100
+      - no-new-privileges:true
+    pids_limit: 50
+      - no-new-privileges:true
+    user: nobody

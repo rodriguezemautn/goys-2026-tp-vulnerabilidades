@@ -1,0 +1,4 @@
+NAME       IMAGE                                      COMMAND                  SERVICE    CREATED          STATUS                    PORTS
+node-lab   goys-vuln-lab-node:22.23.3-bookworm-slim   "docker-entrypoint.s…"   node-lab   39 minutes ago   Up 39 minutes (healthy)   3000/tcp
+php-lab    php:8.3.35-apache                          "docker-php-entrypoi…"   php-lab    39 minutes ago   Up 39 minutes (healthy)   80/tcp
+py-lab     goys-vuln-lab-py:1.0.9                     "python app.py"          py-lab     39 minutes ago   Up 39 minutes (healthy)   8000/tcp

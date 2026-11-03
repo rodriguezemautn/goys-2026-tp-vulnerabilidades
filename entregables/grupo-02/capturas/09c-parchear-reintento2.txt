@@ -1,0 +1,106 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.24kB done
+#1 DONE 0.0s
+
+#2 [node-lab internal] load build definition from Dockerfile
+#2 transferring dockerfile: 227B done
+#2 DONE 0.0s
+
+#3 [py-lab internal] load build definition from Dockerfile
+#3 transferring dockerfile: 245B done
+#3 DONE 0.1s
+
+#4 [py-lab internal] load metadata for docker.io/library/python:3.11-slim
+#4 DONE 1.3s
+
+#5 [node-lab internal] load metadata for docker.io/library/node:22.23.4-bookworm-slim
+#5 DONE 1.3s
+
+#6 [py-lab internal] load .dockerignore
+#6 transferring context: 2B done
+#6 DONE 0.0s
+
+#7 [node-lab internal] load .dockerignore
+#7 transferring context: 2B done
+#7 DONE 0.1s
+
+#8 [node-lab internal] load build context
+#8 transferring context: 63B done
+#8 DONE 0.1s
+
+#9 [py-lab internal] load build context
+#9 transferring context: 28B done
+#9 DONE 0.1s
+
+#10 [py-lab 1/4] FROM docker.io/library/python:3.11-slim@sha256:673719e071ecf27434fd2635bbd8d00f49f4fdd81f243143438a42ced8bedf60
+#10 resolve docker.io/library/python:3.11-slim@sha256:673719e071ecf27434fd2635bbd8d00f49f4fdd81f243143438a42ced8bedf60 0.1s done
+#10 DONE 0.1s
+
+#11 [node-lab 1/5] FROM docker.io/library/node:22.23.4-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#11 resolve docker.io/library/node:22.23.4-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#11 resolve docker.io/library/node:22.23.4-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da 0.1s done
+#11 DONE 0.1s
+
+#12 [py-lab 2/4] WORKDIR /app
+#12 CACHED
+
+#13 [py-lab 3/4] RUN pip install --no-cache-dir "brotli==1.2.1"
+#13 CACHED
+
+#14 [py-lab 4/4] COPY app.py ./
+#14 CACHED
+
+#15 [node-lab 2/5] WORKDIR /app
+#15 CACHED
+
+#16 [node-lab 3/5] COPY package.json ./
+#16 CACHED
+
+#17 [node-lab 4/5] RUN npm install --omit=dev
+#17 CACHED
+
+#18 [node-lab 5/5] COPY server.js ./
+#18 CACHED
+
+#19 [py-lab] exporting to image
+#19 exporting layers done
+#19 exporting manifest sha256:da7fe87fa8e3f97623967565557407be8eb7b7a9a0b562c03af4278f2fb0e923 done
+#19 exporting config sha256:3db0fb13ea7abdfcc4d87934d26f2e3e01065a378e08c560eda30603acd7eca9 done
+#19 exporting attestation manifest sha256:08df544a493129a2dd12cdb6f4d752e29b0731f6376e58c1f17b128fce4b5549
+#19 exporting attestation manifest sha256:08df544a493129a2dd12cdb6f4d752e29b0731f6376e58c1f17b128fce4b5549 0.1s done
+#19 exporting manifest list sha256:3eab2094ebbd017f7a3550cf3a4cc4bac6543d04f3ecbc0a9559c1b69d4d7144
+#19 exporting manifest list sha256:3eab2094ebbd017f7a3550cf3a4cc4bac6543d04f3ecbc0a9559c1b69d4d7144 0.1s done
+#19 naming to docker.io/library/goys-vuln-lab-py:1.2.1
+#19 naming to docker.io/library/goys-vuln-lab-py:1.2.1 0.0s done
+#19 unpacking to docker.io/library/goys-vuln-lab-py:1.2.1 0.0s done
+#19 DONE 0.5s
+
+#20 [node-lab] exporting to image
+#20 exporting layers 0.0s done
+#20 exporting manifest sha256:d6d57ea316130e3e46293684c5d9fbf264b6f46c552cf31f5618e190e718898a 0.0s done
+#20 exporting config sha256:3850edde13c28c3dfd875247997a5a0c1bbe735c67ae252326365fa9c919093f 0.0s done
+#20 exporting attestation manifest sha256:fed10a440358794a6472adca35daeb6835c7a97e170b34bb8d87090c18d8d3a8 0.1s done
+#20 exporting manifest list sha256:8eafa8a49f9eeb36655c59a64e899217cff2bf72f980abd842a85f2fa3a50f67 0.1s done
+#20 naming to docker.io/library/goys-vuln-lab-node:22.23.4-bookworm-slim 0.0s done
+#20 unpacking to docker.io/library/goys-vuln-lab-node:22.23.4-bookworm-slim 0.0s done
+#20 DONE 0.5s
+
+#21 [py-lab] resolving provenance for metadata file
+#21 DONE 0.0s
+
+#22 [node-lab] resolving provenance for metadata file
+#22 DONE 0.0s
+
+== Versiones después del parche ==
+== PHP ==
+PHP 8.3.36 (cli) (built: Oct 28 2026 01:26:59) (NTS)
+session.upload_progress.enabled=0
+
+== Node.js ==
+v22.23.4 / brotli 1.1.0
+-- dependencias con brotli:
+   (sin paquete brotli externo: lo aporta el runtime)
+
+== Python ==
+python 3.11.18
+brotli 1.2.1
