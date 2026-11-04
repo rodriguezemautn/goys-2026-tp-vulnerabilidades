@@ -103,21 +103,56 @@ servicios (`php-lab`, `node-lab`, `py-lab`) en estado `Up (healthy)`
 
 ## 4. Detección y caza
 
-**Hipótesis:** _una frase: proceso, padre, horario, evidencia esperada._
+**Hipótesis:** entre las 09:40 y las 09:50 UTC, buscar hijos `sh`, `bash`, `curl`,
+`wget` o `nc` creados por `apache2`, `php-fpm`, `node` o `python`; se espera un árbol
+de procesos con reconocimiento o conexión saliente desde un servicio.
 
 **Hallazgos en `audit.log`:**
 
 | Línea / timestamp | Host | Padre → hijo | ¿Anómalo? | Por qué |
 |-------------------|------|--------------|:---------:|---------|
-| | | | | |
-| | | | | |
+| 09:42:17–09:42:18 | web01 | `apache2 → sh → id` | Investigar | El servidor web crea un shell para reconocimiento de identidad. |
+| 09:43:03–09:43:04 | api01 | `node → sh → curl` | **Sí** | Node.js lanza un shell y una herramienta de red hacia `198.51.100.7`. |
+| 09:44:22 | web01 | `apache2 → wget` | **Sí** | Un proceso web descarga desde `198.51.100.9`; posible segunda etapa. |
 
-**¿Hay compromiso?** _sí/no/indeterminado, con evidencia._
+**¿Hay compromiso?** **Indeterminado, pero hay ejecución sospechosa que exige
+contención.** Las líneas de `api01` y `web01` sostienen la alerta, pero el log
+sintético no prueba que la descarga haya finalizado, que el tráfico haya salido ni que
+se haya ejecutado un payload.
 
-**Regla propuesta para Node.js:** _qué proceso observa, qué condición y qué falso
-negativo podría tener._
+**Regla propuesta para Node.js:** observar creación de procesos (`process_creation`)
+y disparar cuando `ParentImage` sea `node` y el hijo sea `sh`, `bash`, `curl`, `wget`
+o `nc`; elevar la alerta si se correlaciona una conexión saliente del mismo PID o
+contenedor. Un falso negativo posible es que Node invoque la herramienta mediante un
+wrapper, ruta alternativa, intérprete distinto o binario renombrado.
 
-**Limitaciones del log:** _usuario, IP de origen, retención, ruido, etc._
+```yaml
+title: Node.js Spawns Shell Or Network Utility
+logsource:
+  category: process_creation
+detection:
+  parent_node:
+    ParentImage|endswith: ['/node', '\node.exe']
+  suspicious_child:
+    Image|endswith:
+      - '/sh'
+      - '/bash'
+      - '/curl'
+      - '/wget'
+      - '/nc'
+      - '\sh.exe'
+      - '\bash.exe'
+      - '\curl.exe'
+      - '\wget.exe'
+      - '\nc.exe'
+  condition: parent_node and suspicious_child
+level: high
+```
+
+**Limitaciones del log:** no hay usuario/UID, IP ni puerto de origen o destino,
+contenedor o imagen, hash, resultado de ejecución, salida estándar, telemetría de red
+ni retención. Es un log sintético de diez minutos: puede haber ruido por
+administración/inventario y falsos negativos por wrappers o procesos renombrados.
 
 ---
 
@@ -125,14 +160,29 @@ negativo podría tener._
 
 | Control | Configuración | Evidencia | ¿Funciona? |
 |---------|---------------|-----------|:----------:|
-| Red sin salida | `internal: true` | | |
-| Usuario sin privilegios | | | |
-| Filesystem read-only | | | |
-| Capabilities mínimas | | | |
-| Límites de memoria/PIDs | | | |
-| Rechazo de Brotli innecesario | | | |
+| Red sin salida | `networks.labnet.internal: true` | `docker compose config` muestra `internal: true`; `verificar-contencion.sh` prueba HTTP externo en los tres contenedores. | **Sí**: se espera `SIN SALIDA` en PHP, Node.js y Python. |
+| Usuario sin privilegios | `user: node` / `user: nobody` | Declarado para `node-lab` y `py-lab`; PHP no fija usuario porque Apache requiere cambios de identidad. | **Parcial**: Node y Python no son root; verificar el usuario efectivo de PHP. |
+| Filesystem read-only | `read_only: true` + `tmpfs` | `docker compose config` muestra `read_only: true`; solo `/tmp` y directorios operativos son temporales. | **Sí**, como control contra persistencia en la capa de imagen. |
+| Capabilities mínimas | `cap_drop: ALL` | `docker compose config` muestra `cap_drop: ALL`; PHP agrega solo capacidades operativas explícitas. | **Sí**, con la salvedad de las capacidades agregadas a PHP. |
+| Límites de memoria/PIDs | `mem_limit` y `pids_limit` | PHP/Node: `256m` y `100`; Python: `128m` y `50`, visibles en `docker compose config`. | **Sí**, limita consumo del contenedor; no sustituye monitoreo. |
+| Rechazo de Brotli innecesario | Rechazar `Content-Encoding: br` en proxy/app | No está implementado en `docker-compose.yml`; queda como control compensatorio recomendado para el gateway. | **No verificado** en este laboratorio. |
 
-**Prueba de salida a Internet:** _resultado en los tres servicios._
+**Prueba de salida a Internet:** `./scripts/verificar-contencion.sh` ejecuta una
+solicitud externa desde cada servicio. La evidencia esperada es:
+
+```text
+-- PHP:
+SIN SALIDA
+-- Node.js:
+SIN SALIDA <error de red>
+-- Python:
+SIN SALIDA <error de red>
+```
+
+El nombre exacto de la excepción puede variar según la imagen, pero los tres
+resultados deben ser `SIN SALIDA`. La red `internal: true` bloquea el tráfico externo
+en runtime; no debe confundirse con el acceso temporal a Internet necesario para
+construir las imágenes.
 
 ---
 
