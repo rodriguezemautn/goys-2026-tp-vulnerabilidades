@@ -1,0 +1,8 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.3 186880 27216 ?        Ss   22:08   0:00 apache2 -DFOREGROUND
+www-data    17  0.0  0.1 187060  8588 ?        S    22:08   0:00 apache2 -DFOREGROUND
+www-data    18  0.0  0.1 187060  8588 ?        S    22:08   0:00 apache2 -DFOREGROUND
+www-data    19  0.0  0.1 187060  8588 ?        S    22:08   0:00 apache2 -DFOREGROUND
+www-data    20  0.0  0.1 187060  8588 ?        S    22:08   0:00 apache2 -DFOREGROUND
+www-data    21  0.0  0.1 187060  8588 ?        S    22:08   0:00 apache2 -DFOREGROUND
+root      1387 75.0  0.0   6392  3712 ?        Rs   22:28   0:00 ps aux

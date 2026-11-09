@@ -1,0 +1,2 @@
+PHP responde correctamente
+Contenido recibido: 1093 bytes

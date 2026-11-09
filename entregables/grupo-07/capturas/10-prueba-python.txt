@@ -1,0 +1,2 @@
+HTTP: 200
+Respuesta: {"service": "py-lab", "python": "3.11.18", "brotli": "1.2.1"}

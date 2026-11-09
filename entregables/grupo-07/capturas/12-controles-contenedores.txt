@@ -1,0 +1,3 @@
+Contenedor: /php-lab | Solo lectura: true | Sin nuevos privilegios: [no-new-privileges:true] | Capacidades eliminadas: [ALL] | Limite memoria: 268435456 bytes | Limite procesos: 100
+Contenedor: /node-lab | Solo lectura: true | Sin nuevos privilegios: [no-new-privileges:true] | Capacidades eliminadas: [ALL] | Limite memoria: 268435456 bytes | Limite procesos: 100
+Contenedor: /py-lab | Solo lectura: true | Sin nuevos privilegios: [no-new-privileges:true] | Capacidades eliminadas: [ALL] | Limite memoria: 134217728 bytes | Limite procesos: 50
